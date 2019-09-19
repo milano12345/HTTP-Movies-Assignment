@@ -41,7 +41,7 @@ const UpdateForm = props => {
       .put(`http://localhost:5000/api/movies/${item.id}`, item)
       .then(res => {
         props.updateItems(res.data);
-        props.history.push(`/item-list/${item.id}`);
+        props.history.push(`/movies/${item.id}`);
         setItem(initialItem);
       })
       .catch(err => console.log(err.response));

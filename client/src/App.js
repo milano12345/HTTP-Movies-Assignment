@@ -23,7 +23,7 @@ const App = () => {
         }}
       />
       <Route
-        path="/update-item/:id"
+        path="/update-movie/:id"
         render={props => (
           <UpdateForm {...props} items={savedList} updateItems={setSavedList} />
         )}
